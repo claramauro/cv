@@ -1,0 +1,132 @@
+:root{
+    --dark-theme-color : #826a56;
+    --medium-theme-color : #E2DCCC;
+    --light-theme-color : #FBF8F2;
+}
+
+body{
+    font-family: "Public Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.3rem;
+    color: #221e1c;
+    background-color: #FFF;
+    margin: 10px;
+}
+
+.container{
+margin: auto;
+max-width: 793px;
+position: relative;
+}
+
+h1, h3{
+    font-weight: 700;
+}
+
+/* Header*/
+.header{
+    background-color: var(--light-theme-color);
+    padding: 35px 20px 35px 100px;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+
+}
+
+.photo-cv{
+    width: 25%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #FFF;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.header__title{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+}
+
+.header__subtitle{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.header__text:nth-of-type(1){
+    margin-bottom: 5px;
+}
+
+
+/* Main */
+.flex-sidebar-main-content{
+    display: flex;
+}
+
+.section-title{
+    font-size: 1.3rem;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+}
+
+
+/* Sidebar */
+.sidebar{
+    background-color: var(--medium-theme-color);
+    padding: 315px 30px 20px 30px; /* Padding-top doit ^etre > height du padding */
+    font-size: 14px;
+}
+
+.sidebar-section:not(.sidebar-section:nth-last-child(1)){
+    margin-bottom: 35px;
+}
+
+.sidebar__list__item{
+    display: flex; 
+    align-items: flex-end;
+    column-gap: 10px;
+}
+
+.item-address .sidebar-icon,
+.item-interest .sidebar-icon{
+    align-self: flex-start; /*Icone au niveau de la première ligne de texte (texte sur plusieurs lignes)*/
+}
+
+.sidebar__list__item:not(.sidebar__list__item:nth-last-child(1)){
+    margin-bottom: 10px;
+}
+
+.sidebar-icon{
+    width: 24px;
+}
+
+.sidebar__contact .sidebar-icon,
+.sidebar__diverse .sidebar-icon{
+width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plus grande que celle de la section sidebar__infos */
+}
+
+.item-age span{
+    line-height: 1.2em; /*Aligne correctement le texte à son icone */
+}
+
+.sidebar a{
+    border-bottom: 1px solid var(--dark-theme-color);
+    transition: all .3s;
+}
+
+.sidebar a:hover{
+    border-color: var(--light-theme-color);
+}
+
+/* Main-content */
+.main-content{
+    padding : 315px 20px 20px; /* Padding-top doit ^etre > height du padding */
+}
+
