@@ -66,26 +66,26 @@ h1, h3{
 
 
 /* Main */
-.flex-sidebar-main-content{
+.main{
     display: flex;
 }
 
-.section-title{
-    font-size: 1.3rem;
-    line-height: 1.2em;
-    margin-bottom: 15px;
-}
-
-
-/* Sidebar */
+    /* Sidebar */
 .sidebar{
     background-color: var(--medium-theme-color);
     padding: 315px 30px 20px 30px; /* Padding-top doit ^etre > height du padding */
     font-size: 14px;
 }
 
-.sidebar-section:not(.sidebar-section:nth-last-child(1)){
+.sidebar__section:not(.sidebar__section:nth-last-child(1)){
     margin-bottom: 35px;
+}
+
+.sidebar__title{
+    font-size: 1.3rem;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    color: #645141;
 }
 
 .sidebar__list__item{
@@ -107,8 +107,8 @@ h1, h3{
     width: 24px;
 }
 
-.sidebar__contact .sidebar-icon,
-.sidebar__diverse .sidebar-icon{
+.sidebar__section--contact .sidebar-icon,
+.sidebar__section--diverse .sidebar-icon{
 width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plus grande que celle de la section sidebar__infos */
 }
 
@@ -127,6 +127,94 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
 
 /* Main-content */
 .main-content{
-    padding : 315px 20px 20px; /* Padding-top doit ^etre > height du padding */
+    padding : 315px 0 20px 40px; /* Padding-top doit ^etre > height du padding */
+}
+
+.content__section:not(.content__section:nth-last-child(1)){
+    margin-bottom: 30px; /* Sur tous sauf le dernier .content__section*/
+}
+
+.content__section__title{
+    background-color: var(--dark-theme-color);
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 5px 10px 5px 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.content__item{
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 10px 10px 25px ;
+    /*border-left: 1px solid var(--dark-theme-color); */
+}
+
+
+.border-deco{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 50%;
+    border-left: 3px solid var(--dark-theme-color);
+}
+
+.border-deco::before{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--dark-theme-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-59%, -50%);
+}
+
+.border-deco::after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--dark-theme-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-59%, 50%);
+}
+
+.content__item__title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content__item__company{
+    font-size: .9em;
+    font-weight: 400;
+    margin-bottom: 3px;
+
+}
+
+.content__item__period{
+    font-size: .85em;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.content__item__tasks{
+    padding-left: 25px;
+}
+
+.content__item__tasks li{
+    list-style: disc outside;
+    font-size: .9em;
 }
 
