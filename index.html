@@ -38,10 +38,7 @@
                         </li>
                         <li class="sidebar__list__item item-address">
                             <img class="sidebar-icon" src="/img/map-pin-icon.svg" alt="icône point sur une carte">
-                            <address>
-                                <span>21 Avenue Auguste Vérola</span><br>
-                                <span>06200 Nice</span><br>
-                            </address>
+                            <div>Nice, France</div>
                         </li>
                         <li class="sidebar__list__item item-driver">
                             <img class="sidebar-icon" src="/img/car-front-icon.svg" alt="icône voiture">
@@ -66,7 +63,7 @@
                         </li>
                     </ul>
                 </section>
-                <section class="sidebar__diverse sidebar__section--diverse">
+                <section class="sidebar__section sidebar__section--diverse">
                     <h3 class="sidebar__title">Divers</h3>
                     <ul class="sidebar__list">
                         <li class="sidebar__list__item item-languages">
@@ -77,11 +74,12 @@
                             <img class="sidebar-icon" src="/img/heart-icon.svg" alt="icône représantant le thême des centres d'interêts">
                             <span>
                                 Centres d'intérêts :<br>
-                                voyages, plongée sous marine (PADI Advenced OW), Crossfit
+                                voyages, plongée sous marine (PADI Advenced OW)
                             </span>
                         </li>
                     </ul>
                 </section>
+                <button class="btn btn-print" onclick="window.print()">Télécharger en PDF</button>
             </aside>
 
             <section class="main-content">
@@ -91,13 +89,13 @@
                         <li class="content__item content__item--experiences">
                             <div class="border-deco"></div>
                             <h4 class="content__item__title">Infirmière Diplomée d'État</h4>
-                            <div class="content__item__company">
+                            <div class="content__item__place">
                                 Laboratoire d'Analyses Médicales Cerballiance - Nice St Isidore
                             </div>
                             <div class="content__item__period">
-                                octobre 2022 - décembre 2022
+                                <time datetime="2022-10">octobre 2022 </time> - <time datetime="2022-12"> décembre 2022</time>
                             </div>
-                            <ul class="content__item__tasks">
+                            <ul class="content__item__sublist">
                                 <li>
                                     <span>
                                         Prélèvements sanguins et autres échantillons biologiques
@@ -110,14 +108,14 @@
                         <li class="content__item content__item--experiences">
                             <div class="border-deco"></div>
                             <h4 class="content__item__title">Infirmière Diplomée d'État</h4>
-                            <div class="content__item__company">
+                            <div class="content__item__place">
                                 Chirurgie réparatrice, esthétique et de la main - CHU de Nice
                             </div>
                             <div class="content__item__period">
-                                juillet 2016 - août 2022
+                                <time datetime="2016-07">juillet 2016 </time> - <time datetime="2022-08"> août 2022</time>
                             </div>
-                            <ul class="content__item__tasks">
-                                <li>Prise en charge pré et post-opératoire de patients en hospitalisation complète et en ambulatoire</li>
+                            <ul class="content__item__sublist">
+                                <li>Prise en charge pré et post-opératoire</li>
                                 <li>Gestion de documents administratifs, gestion des stocks et commandes</li>
                                 <li>Travail et coordination au sein d’une équipe pluridisciplinaire</li>
                             </ul>
@@ -128,10 +126,13 @@
                 <section class="content__section content__section--projects">
                     <h3 class="content__section__title">Projets</h3>
                     <ul class="content__section__list content__section__list--projects">
-                        <li>
-                            <a href="https://cleriam.com/">Cleriam.com</a>
+                        <li class="content__item">
+                            <div class="border-deco"></div>
+                            <h4 class="content__item__title">
+                                <a href="https://cleriam.com/" title="Lien vers Cleriam.com">Cleriam.com</a>
+                            </h4>
                             <p>Site web responsive BtoB avec formulaire de contact (géré via Formspree)</p>
-                            <ul>
+                            <ul class="content__item__sublist">
                                 <li>
                                     Création de la maquette selon les demandes du client
                                 </li>
@@ -140,10 +141,14 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <div>Todolist</div>
-                            <p>Application web de gestion de tâches. Système de connexion utilisateur</p>
-                            <ul>
+                        <li class="content__item">
+                            <div class="border-deco"></div>
+                            <h4 class="content__item__title">Todolist</h4>
+                            <p>
+                                Application web de gestion de tâches<br>
+                                Système de connexion utilisateur
+                            </p>
+                            <ul class="content__item__sublist">
                                 <li>
                                     Technologies : HTML, CSS, Bootstrap, Javascript, NodeJS, Fastify, MySQL, Git
                                 </li>
@@ -155,23 +160,32 @@
                 <section class="content__section content__section--education">
                     <h3 class="content__section__title">Formations et diplômes</h3>
                     <ul class="content__section__list content__section__list--education">
-                        <li>
-                            <h4>Formation Développeur web et web mobile</h4>
-                            <span>mai 2024 - novembre 2024</span>
-                            <span>O'clock</span>
-                            <span>
+                        <li class="content__item">
+                            <div class="border-deco"></div>
+                            <h4 class="content__item__title">Formation Développeur web et web mobile</h4>
+                            <div class="content__item__place">O'clock</div>
+                            <div class="content__item__period">
+                                <time datetime="2024-05">mai 2024 </time> - <time datetime="2024-11"> novembre 2024</time>
+                            </div>
+                            <p>
                                 Préparation au Titre Professionnel Développeur Web et Web Mobile niveau 5 (inscrit au RNCP n°37674)
-                            </span>
+                            </p>
                         </li>
-                        <li>
-                            <h4>Diplôme d’état infirmier</h4>
-                            <span>septembre 2013 - juillet 2016</span>
-                            <span>IFSI du CHU de Nice</span>
+                        <li class="content__item">
+                            <div class="border-deco"></div>
+                            <h4 class="content__item__title">Diplôme d’État Infirmier</h4>
+                            <div class="content__item__place">IFSI du CHU de Nice</div>
+                            <div class="content__item__period">
+                                <time datetime="2013-09">septembre 2013 </time> - <time datetime="2016-07"> juillet 2016</time>
+                            </div>
                         </li>
-                        <li>
-                            <h4>Baccalauréat - Série Scientifique</h4>
-                            <span>2013</span>
-                            <span>Lycée Honoré d'Estienne d'Orves, Nice</span>
+                        <li class="content__item">
+                            <div class="border-deco"></div>
+                            <h4 class="content__item__title">Baccalauréat - Série Scientifique</h4>
+                            <div class="content__item__place">Lycée Honoré d'Estienne d'Orves, Nice</div>
+                            <div class="content__item__period">
+                                <time datetime="2023">2013</time>
+                            </div>
                         </li>
                     </ul>
                 </section>

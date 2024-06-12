@@ -6,7 +6,6 @@
 
 body{
     font-family: "Public Sans", sans-serif;
-    font-size: 16px;
     line-height: 1.3rem;
     color: #221e1c;
     background-color: #FFF;
@@ -21,6 +20,15 @@ position: relative;
 
 h1, h3{
     font-weight: 700;
+}
+
+a{
+    border-bottom: 1px solid var(--dark-theme-color);
+    transition: all .3s;
+}
+
+a:hover{
+    border-color: var(--light-theme-color);
 }
 
 /* Header*/
@@ -94,9 +102,8 @@ h1, h3{
     column-gap: 10px;
 }
 
-.item-address .sidebar-icon,
-.item-interest .sidebar-icon{
-    align-self: flex-start; /*Icone au niveau de la première ligne de texte (texte sur plusieurs lignes)*/
+.sidebar-icon{
+    align-self: flex-start; /*Icone au niveau de la première ligne de texte (si texte sur plusieurs lignes)*/
 }
 
 .sidebar__list__item:not(.sidebar__list__item:nth-last-child(1)){
@@ -116,14 +123,6 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
     line-height: 1.2em; /*Aligne correctement le texte à son icone */
 }
 
-.sidebar a{
-    border-bottom: 1px solid var(--dark-theme-color);
-    transition: all .3s;
-}
-
-.sidebar a:hover{
-    border-color: var(--light-theme-color);
-}
 
 /* Main-content */
 .main-content{
@@ -150,7 +149,7 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
 .content__item{
     margin-bottom: 20px;
     position: relative;
-    padding: 10px 10px 10px 25px ;
+    padding: 0 10px 0 25px ;
     /*border-left: 1px solid var(--dark-theme-color); */
 }
 
@@ -158,44 +157,44 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
 .border-deco{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-49%);
     left: 0;
-    height: 50%;
+    height: 90%;
     border-left: 3px solid var(--dark-theme-color);
 }
 
 .border-deco::before{
     content: "";
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: var(--dark-theme-color);
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-59%, -50%);
+    transform: translate(-62%, -50%);
 }
 
 .border-deco::after{
     content: "";
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: var(--dark-theme-color);
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translate(-59%, 50%);
+    transform: translate(-62%, 50%);
 }
 
 .content__item__title{
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.content__item__company{
+.content__item__place{
     font-size: .9em;
     font-weight: 400;
     margin-bottom: 3px;
@@ -209,12 +208,94 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
     margin-bottom: 10px;
 }
 
-.content__item__tasks{
+.content__item__sublist{
     padding-left: 25px;
-}
-
-.content__item__tasks li{
-    list-style: disc outside;
     font-size: .9em;
 }
 
+.content__item__sublist li{
+    list-style: disc outside;
+}
+
+.content__section--projects a:hover{
+    border-color: var(--medium-theme-color);
+}
+
+.content__section--projects p{
+    margin-bottom: 5px;
+}
+
+.btn{
+    background-color: var(--dark-theme-color);
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 30px;
+    transition: all .3s;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+/*Version imprimable/PDF*/
+@media print {
+    html{
+        font-size: 14px;
+    }
+
+    .header{
+        margin-top: 0;
+    }
+
+    .sidebar,
+    .main-content{
+        padding-top: 225px;
+    }
+
+    .sidebar{
+        width: min-content;
+    }
+
+    .main-content{
+        padding-left: 5px;
+    }
+
+    .content__section:not(.content__section:nth-last-child(1)){
+        margin-bottom: 25px;
+    }
+
+    .border-deco,
+    .btn-print{
+        display: none;
+    }
+
+    .content__item{
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .content__section__title{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0;
+        color: #645141;
+        font-weight: bold;
+        font-size: 1.3rem;
+        background: none;
+        padding-left: 0;
+    }
+
+    .content__item__place,
+    .content__item__period,
+    .content__item__sublist{
+        font-size: 1rem;
+    }
+
+    .content__item__period{
+        margin-bottom: 5px;
+    }
+}
