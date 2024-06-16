@@ -14,17 +14,19 @@
 <body>
     <div class="container">
         <header class="header">
-            <img class="photo-cv" src="/img/photo-cv.jpg" alt="Photo CV Clara Mauro-Gioan">
-                <h1 class="header__title">Clara Mauro-Gioan</h1>
-                <h2 class="header__subtitle">
+            <img class="header__photo" src="/img/photo-cv.jpg" alt="Photo CV Clara Mauro-Gioan">
+            <div class="header__content">
+                <h1 class="header__content__title">Clara Mauro-Gioan</h1>
+                <h2 class="header__content__subtitle">
                     Développeuse web JS / Node.JS
                 </h2>
-                <p class="header__text">
+                <p class="header__content__text">
                     En recherche d’un <strong>stage</strong> dans le <strong>développement web front-end (Javascript) et/ou back-end (nodeJS)</strong>.<br>
                 </p>
-                <p class="header__text">
+                <p class="header__content__text">
                     Je suis actuellement en formation développeur web et web mobile chez O’clock.
                 </p>
+            </div>
         </header>
 
         <main class="main">
@@ -55,7 +57,7 @@
                         </li>
                         <li class="sidebar__list__item">
                             <img class="sidebar-icon" src="/img/mail-icon.svg" alt="icône mail">
-                            <a href="mailto:maurog.clara@gmail.com">maurog.clara@gmail.com</a>
+                            <a class="mail-link" href="mailto:maurog.clara@gmail.com">maurog.clara@gmail.com</a>
                         </li>
                         <li class="sidebar__list__item">
                             <img class="sidebar-icon" src="/img/github-icon.svg" alt="icône GitHub">
@@ -79,7 +81,7 @@
                         </li>
                     </ul>
                 </section>
-                <button class="btn btn-print" onclick="window.print()">Télécharger en PDF</button>
+                <button class="btn btn--desktop" onclick="window.print()">Télécharger en PDF</button>
             </aside>
 
             <section class="main-content">
@@ -189,6 +191,9 @@
                         </li>
                     </ul>
                 </section>
+
+                <button class="btn btn--mobile" onclick="window.print()">Télécharger en PDF</button>
+
             </section>
         </main>
 
