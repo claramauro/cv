@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/app.js" defer></script>
+
 </head>
 <body>
     <div class="container">
@@ -36,7 +39,9 @@
                     <ul class="sidebar__list">
                         <li class="sidebar__list__item item-age">
                             <img class="sidebar-icon" src="/img/cake-icon.svg" alt="icône gâteau d'anniversaire">
-                            <span>28 ans</span>
+                            <div class="sidebar__list__item--age">
+                                <span class="js-age">28</span> ans
+                            </div>
                         </li>
                         <li class="sidebar__list__item item-address">
                             <img class="sidebar-icon" src="/img/map-pin-icon.svg" alt="icône point sur une carte">
@@ -81,7 +86,7 @@
                         </li>
                     </ul>
                 </section>
-                <button class="btn btn--desktop" onclick="window.print()">Télécharger en PDF</button>
+                <button class="btn btn--desktop btn-upload">Télécharger en PDF</button>
             </aside>
 
             <section class="main-content">
@@ -192,7 +197,7 @@
                     </ul>
                 </section>
 
-                <button class="btn btn--mobile" onclick="window.print()">Télécharger en PDF</button>
+                <button class="btn btn--mobile btn-upload">Télécharger en PDF</button>
 
             </section>
         </main>

@@ -37,7 +37,7 @@ a:hover{
     color: #FFF;
     border: none;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2em;
     width: 100%;
     margin-top: 30px;
@@ -118,13 +118,6 @@ a:hover{
     display: flex; 
     align-items: flex-end;
     column-gap: 10px;
-}
-
-.sidebar-icon{
-    align-self: flex-start; /*Icone au niveau de la première ligne de texte (si texte sur plusieurs lignes)*/
-}
-
-.sidebar__list__item{
     margin-bottom: 10px;
 }
 
@@ -133,15 +126,17 @@ a:hover{
 }
 
 .sidebar-icon{
+    align-self: flex-start; /*Icone au niveau de la première ligne de texte (si texte sur plusieurs lignes)*/
     width: 24px;
 }
+
 
 .sidebar__section--contact .sidebar-icon,
 .sidebar__section--diverse .sidebar-icon{
 width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plus grande que celle de la section sidebar__infos */
 }
 
-.item-age span{
+.sidebar__list__item--age{
     line-height: 1.2em; /*Aligne correctement le texte à son icone */
 }
 
