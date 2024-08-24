@@ -24,6 +24,10 @@ h1, h3, h4{
     font-weight: 700;
 }
 
+h5{
+    font-weight : 500;
+}
+
 a{
     border-bottom: 1px solid var(--dark-theme-color);
     transition: all .3s;
@@ -34,19 +38,31 @@ a:hover{
 }
 
 .btn{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
     background-color: var(--dark-theme-color);
     color: #FFF;
     border: none;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 10px 15px;
     font-weight: 500;
     font-size: 1.2em;
-    width: 100%;
-    margin-top: 30px;
+    width: max-content;
+    margin: 50px auto 0;
     transition: all .3s;
 }
 
 .btn:hover{
     background-color: var(--dark-theme-color-opacity);
+}
+
+.softskills{
+    background-color: var(--light-theme-color);
+    color: var(--dark-theme-color);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 /* Header*/
@@ -110,22 +126,10 @@ a:hover{
 }
 
 .sidebar__title{
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     line-height: 1.2em;
     margin-bottom: 15px;
     color: #645141;
-    text-align: center;
-}
-
-.sidebar__list__item{
-    display: flex; 
-    align-items: flex-end;
-    column-gap: 10px;
-    margin-bottom: 10px;
-}
-
-.sidebar__list__item:last-child{
-    margin: 0;
 }
 
 .sidebar-icon{
@@ -133,32 +137,54 @@ a:hover{
     width: 24px;
 }
 
-.sidebar-icon--mail{
-    width: 22px;
-}
-
-.sidebar__section--techno h4{
-    font-size: 0.95rem;
-}
-
-.sidebar__section--techno .techno__item{
+.infos__item,
+.divers__item{
+    display: flex;
+    align-items: flex-end;
+    column-gap: 10px;
     margin-bottom: 10px;
 }
 
-
+.sidebar-icon--mail,
 .sidebar__section--diverse .sidebar-icon{
-width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plus grande que celle de la section sidebar__infos */
+    width: 22px;
 }
 
+.sidebar-icon--languages{
+    align-self: center;
+}
+
+.infos__item:last-child{
+margin-bottom: 0;
+}
+
+.sidebar__section--techno h4{
+    font-size: 1rem;
+}
+
+.techno__item{
+    margin-bottom: 10px;
+}
+
+.softskills__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.softskills--sidebar{
+    width: 195px;
+}
 
     /* Main-content */
 .main-content{
-    padding : 340px 0 20px 40px; /* Padding-top doit etre > height du padding */
+    padding : 340px 0 20px 40px; /* Padding-top doit être > height du padding */
     width: 65%;
 }
 
 .content__section:not(.content__section:nth-last-child(1)){
-    margin-bottom: 30px; /* Sur tous sauf le dernier .content__section*/
+    margin-bottom: 50px; /* Sur tous sauf le dernier .content__section*/
 }
 
 .content__section__title{
@@ -175,7 +201,7 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
 }
 
 .content__item{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
     padding: 0 10px 0 25px ;
 }
@@ -217,22 +243,22 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
 }
 
 .content__item__title{
+    font-size: 1rem;
     font-weight: 600;
+}
+
+.content__item__title.title--cleriam{
     margin-bottom: 5px;
 }
 
-.content__item__place{
-    font-size: .9em;
-    font-weight: 400;
-    margin-bottom: 3px;
-
+.content__item__infos{
+    margin-bottom: -3px;
 }
 
 .content__item__period{
     font-size: .85em;
     color: grey;
     font-weight: 300;
-    margin-bottom: 10px;
 }
 
 .content__item__sublist{
@@ -244,20 +270,34 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
     list-style: disc outside;
 }
 
-.content__section--projects a:hover{
-    border-color: var(--medium-theme-color);
+.sidebar__section--softskills .sidebar__title{
+    margin-bottom: 20px;
 }
 
-.content__section--projects p{
-    margin-bottom: 5px;
+.content__section .softskills__list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.softskills--main{
+    width: calc(100% / 3 - 10px);
+}
+
+.content__section h5{
+    margin: 5px 0 10px;
+}
+
+
+.content__section a:hover{
+    border-color: var(--medium-theme-color);
 }
 
 .btn--mobile{
     display: none;
 }
 
-
-@media (max-width : 700px){
+@media (max-width : 755px){
     body{
         margin: 10px;
     }
@@ -287,16 +327,7 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
         transform: none;
     }
 
-    .header__content__title{
-        font-size: 1.3rem;
-    }
-
-    .header__content__subtitle{
-        font-size: 1.2rem;
-    }
-
     .header__content__text{
-        font-size: .9rem;
         text-align: justify;
     }
 
@@ -310,19 +341,23 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
         margin-bottom: 20px;
     }
 
-    .sidebar__list{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .sidebar__title{
+        text-align: center;
     }
 
-    .btn--desktop,
+    .softskills__list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
     .border-deco{
         display: none;
     }
 
     .content__section__title{
-        width: 80%;
+        width: 60%;
     }
 
     .content__item{
@@ -330,20 +365,30 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
     }
 
     .content__item__title{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
-    .content__item__place,
     .content__item__sublist{
+        font-size: 14px;
+    }
+
+    .content__item__infos{
+        margin-bottom: 0;
+    }
+
+
+    .content__item h5{
         font-size: 1rem;
     }
 
-    .content__item__period{
-        font-size: .95rem;
+    .softskills--main{
+        width: calc(100% / 3 - 10px);
     }
+}
 
-    .btn--mobile{
-        display: block;
+@media (max-width: 475px) {
+    .softskills--main{
+        width: max-content;
     }
 }
 
@@ -354,21 +399,66 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
         font-size: 14px;
     }
 
+    body,
+    .sidebar__title,
+    .content__section__title{
+        color: black!important;
+    }
+
     .container{
         border: none;
     }
 
+    a{
+        border-bottom: none;
+    }
+
     .header{
         margin-top: 0;
+        padding: 40px 20px 0;
+        width: 100%;
+    }
+
+    .header__photo{
+        display: none;
     }
 
     .sidebar,
     .main-content{
-        padding-top: 225px;
+        padding-top: 240px;
     }
 
     .sidebar{
-        width: min-content;
+        width: 35%;
+    }
+
+    .sidebar__section{
+        margin-bottom: 20px;
+    }
+
+    .sidebar__title{
+        margin-bottom: 10px;
+    }
+
+    .sidebar-icon{
+        width: 15px;
+    }
+
+    .sidebar__section--softskills .sidebar__title{
+        margin-bottom: 15px;
+    }
+
+    .softskills__list{
+        gap: 5px 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .softskills{
+        width: max-content;
+        padding: 0;
+        background-color: transparent;
+        color: black;
     }
 
     .main-content{
@@ -385,8 +475,11 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
     }
 
     .content__item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1px;
         padding-left: 0;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .content__section__title{
@@ -397,16 +490,19 @@ width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plu
         font-weight: bold;
         font-size: 1.3rem;
         background: none;
-        padding-left: 0;
+        text-align: center;
     }
 
-    .content__item__place,
     .content__item__period,
     .content__item__sublist{
         font-size: 1rem;
     }
 
-    .content__item__period{
-        margin-bottom: 5px;
+    .content__item__infos{
+        margin-bottom: 0;
+    }
+
+    .content__section h5{
+        margin: 0;
     }
 }

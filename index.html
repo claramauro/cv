@@ -36,25 +36,25 @@
         <main class="main">
             <aside class="sidebar">
                 <section class="sidebar__section sidebar__section--infos">
-                    <h3 class="sidebar__title">Informations personnelles</h3>
-                    <ul class="sidebar__list">
-                        <li class="sidebar__list__item">
+                    <h3 class="sidebar__title">Informations</h3>
+                    <ul>
+                        <li class="infos__item">
                             <img class="sidebar-icon" src="/img/map-pin-icon.svg" alt="icône point sur une carte">
                             <div>Nice, France</div>
                         </li>
-                        <li class="sidebar__list__item">
+                        <li class="infos__item">
                             <img class="sidebar-icon  sidebar-icon--mail" src="/img/mail-icon.svg" alt="icône mail">
                             <a class="mail-link" href="mailto:maurog.clara@gmail.com">maurog.clara@gmail.com</a>
                         </li>
-                        <li class="sidebar__list__item">
+                        <li class="infos__item">
                             <img class="sidebar-icon" src="/img/phone-icon.svg" alt="icône téléphone">
                             <a href="tel:+33611659046">+33 6 11 65 90 46</a>
                         </li>
-                        <li class="sidebar__list__item">
+                        <li class="infos__item">
                             <img class="sidebar-icon" src="/img/github-icon.svg" alt="icône GitHub">
                             <a href="https://github.com/claramauro" target="_blank" title="Lien vers GitHub">claramauro</a>
                         </li>
-                        <li class="sidebar__list__item">
+                        <li class="infos__item">
                             <img class="sidebar-icon" src="/img/linkedin-icon.svg" alt="icône Linkedin">
                             <a href="https://www.linkedin.com/in/clara-mauro-gioan-2a55a8229/" target="_blank" title="Lien vers Linkedin">Clara Mauro-Gioan</a>
                         </li>
@@ -62,18 +62,18 @@
                 </section>
                 <section class="sidebar__section sidebar__section--techno">
                     <h3 class="sidebar__title">Technologies</h3>
-                    <ul class="sidebar__list">
+                    <ul>
                         <li class="techno__item">
                             <h4>Langages de programmation :</h4>
                             <p>HTML, CSS, <em>JS</em>, TypeScript</p>
                         </li>
                         <li class="techno__item">
                             <h4>Frameworks et bibliothèques :</h4>
-                            <p><em>NodeJS</em>, Express, EJS, Fastify, Bootstrap, <em>React</em></p>
+                            <p><em>Node.JS</em>, Express, EJS, Fastify, Bootstrap, <em>React</em></p>
                         </li>
                         <li class="techno__item">
                             <h4>Base de données :</h4>
-                            <p>SQL (postgreSQL), ORM Sequelize, NoSQL</p>
+                            <p>SQL (PostgreSQL), ORM Sequelize, NoSQL</p>
                         </li>
                         <li class="techno__item">
                             <h4>Autres :</h4>
@@ -81,138 +81,131 @@
                         </li>
                     </ul>
                 </section>
+                <section class="sidebar__section sidebar__section--softskills">
+                    <h3 class="sidebar__title">Qualités personnelles</h3>
+                    <ul class="softskills__list">
+                        <li class="softskills softskills--sidebar">Organisée</li>
+                        <li class="softskills softskills--sidebar">Réfléchie</li>
+                        <li class="softskills softskills--sidebar">Perfectionniste</li>
+                        <li class="softskills softskills--sidebar">Curieuse</li>
+                        <li class="softskills softskills--sidebar">Loyale</li>
+                    </ul>
+                </section>
                 <section class="sidebar__section sidebar__section--diverse">
                     <h3 class="sidebar__title">Divers</h3>
-                    <ul class="sidebar__list">
-                        <li class="sidebar__list__item item-languages">
-                            <img class="sidebar-icon" src="/img/languages-icon.svg" alt="icône langages">
-                            <span>Anglais niveau CECRL A2</span>
+                    <ul>
+                        <li class="divers__item">
+                            <img class="sidebar-icon sidebar-icon--languages" src="/img/languages-icon.svg" alt="icône langages">
+                            <span>Français (langue maternelle), Anglais niveau CECRL B1</span>
                         </li>
-                        <li class="sidebar__list__item item-interest">
+                        <li class="divers__item">
                             <img class="sidebar-icon" src="/img/heart-icon.svg" alt="icône représantant le thême des centres d'interêts">
-                            <span>
-                                Centres d'intérêts :<br>
-                                voyages, plongée sous marine (PADI Advenced OW)
-                            </span>
+                            <div>
+                                <h4>Centres d'intérêts :</h4>
+                                <p>Plongée sous marine (niveau PADI Advenced OW)</p>
+                                <p>Voyages : découvrir des nouveaux paysages, des cultures et des gastronomies différentes.</p>
+                            </div>
                         </li>
                     </ul>
                 </section>
-                <button class="btn btn--desktop btn-upload">Télécharger en PDF</button>
             </aside>
 
             <section class="main-content">
-                <section class="content__section content__section--experiences">
+                <section class="content__section">
                     <h3 class="content__section__title">Expériences</h3>
-                    <ul class="content__section__list content__section__list--experiences">
-                        <li class="content__item content__item--experiences">
+                    <ul class="content__section__list">
+                        <li class="content__item">
                             <div class="border-deco"></div>
-                            <h4 class="content__item__title">Infirmière Diplomée d'État</h4>
-                            <div class="content__item__place">
-                                Laboratoire d'Analyses Médicales Cerballiance - Nice St Isidore
-                            </div>
-                            <div class="content__item__period">
-                                <time datetime="2022-10">octobre 2022 </time> - <time datetime="2022-12"> décembre 2022</time>
-                            </div>
+                            <h4 class="content__item__title">Apothéose</h4>
+                            <p class="content__item__infos">Projet de fin de formation - École O'clock</p>
+                            <time class="content__item__period" datetime="2024-11">novembre 2024 </time>
+                            <p>Réalisation d'une application web en équipe, de sa conception, jusqu'au déploiement d'un MVP en méthodologie agile.</p>
+                        </li>
+                        <li class="content__item">
+                            <div class="border-deco"></div>
+                            <h4 class="content__item__title title--cleriam">
+                                <a href="https://cleriam.com/" title="Lien vers Cleriam.com" target="_blank">Cleriam.com</a>
+                            </h4>
+                            <p class="content__item__infos">Projet délégué par QDEQUIPPE - Développeur Freelance</p>
+                            <time class="content__item__period" datetime="2023-08">août 2023 </time>
+                            <p>Page web responsive BtoB</p>
                             <ul class="content__item__sublist">
-                                <li>
-                                    <span>
-                                        Prélèvements sanguins et autres échantillons biologiques
-                                    </span>
-                                </li>
-                                <li>Traitement pré-analytique des échantillons</li>
-                                <li>Gestion des stocks et commandes</li>
+                                <li>Création de la maquette sur Figma selon les demandes du client</li>
+                                <li>Intégration</li>
+                                <li>Technologies : HTML, CSS, SCSS, Javascript, Git, Formspree</li>
                             </ul>
                         </li>
-                        <li class="content__item content__item--experiences">
+                        <li class="content__item">
                             <div class="border-deco"></div>
                             <h4 class="content__item__title">Infirmière Diplomée d'État</h4>
-                            <div class="content__item__place">
-                                Chirurgie réparatrice, esthétique et de la main - CHU de Nice
+                            <p class="content__item__infos">Laboratoire d'Analyses Médicales Cerballiance - Nice</p>
+                            <div class="content__item__period">
+                                <time datetime="2022-10">octobre 2022 </time> - <time datetime="2023-12"> décembre 2022</time>
                             </div>
+                            <p class="content__item__infos">Chirurgie réparatrice, esthétique et de la main - CHU de Nice</p>
                             <div class="content__item__period">
                                 <time datetime="2016-07">juillet 2016 </time> - <time datetime="2022-08"> août 2022</time>
                             </div>
-                            <ul class="content__item__sublist">
-                                <li>Prise en charge pré et post-opératoire</li>
-                                <li>Gestion de documents administratifs, gestion des stocks et commandes</li>
-                                <li>Travail et coordination au sein d’une équipe pluridisciplinaire</li>
+                            <h5>Compétences transversales :</h5>
+                            <ul class="softskills__list">
+                                <li class="softskills softskills--main">Organisation</li>
+                                <li class="softskills softskills--main">Planification</li>
+                                <li class="softskills softskills--main">Travail en équipe</li>
+                                <li class="softskills softskills--main">Communication</li>
+                                <li class="softskills softskills--main">Gestion du stress</li>
+                                <li class="softskills softskills--main">Encadrement</li>
                             </ul>
                         </li>
                     </ul>
                 </section>
 
-                <section class="content__section content__section--projects">
-                    <h3 class="content__section__title">Projets</h3>
-                    <ul class="content__section__list content__section__list--projects">
+                <section class="content__section">
+                    <h3 class="content__section__title">Formations</h3>
+                    <ul class="content__section__list">
                         <li class="content__item">
                             <div class="border-deco"></div>
-                            <h4 class="content__item__title">
-                                <a href="https://cleriam.com/" target="_blank" title="Lien vers Cleriam.com">Cleriam.com</a>
-                            </h4>
-                            <p>Site web responsive BtoB avec formulaire de contact (géré via Formspree)</p>
-                            <ul class="content__item__sublist">
-                                <li>
-                                    Création de la maquette selon les demandes du client
-                                </li>
-                                <li>
-                                    Technologies : HTML, CSS, SCSS, Javascript, Git
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <h4 class="content__item__title">Todolist</h4>
-                            <p>
-                                Application web de gestion de tâches<br>
-                                Système de connexion utilisateur
-                            </p>
-                            <ul class="content__item__sublist">
-                                <li>
-                                    Technologies : HTML, CSS, Bootstrap, Javascript, NodeJS, Fastify, MySQL, Git
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="content__section content__section--education">
-                    <h3 class="content__section__title">Formations et diplômes</h3>
-                    <ul class="content__section__list content__section__list--education">
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <h4 class="content__item__title">Formation Développeur web et web mobile</h4>
-                            <div class="content__item__place">O'clock</div>
+                            <h4 class="content__item__title">Formation développement web <em>Fullstack</em> <em>Javascript</em></h4>
+                            <div class="content__item__infos">École O'clock - Formation en téléprésentiel</div>
                             <div class="content__item__period">
-                                <time datetime="2024-05">mai 2024 </time> - <time datetime="2024-11"> novembre 2024</time>
+                                <time datetime="2024-05">mai 2024 </time> - <time datetime="2025-01"> janvier 2024</time>
                             </div>
                             <p>
-                                Préparation au Titre Professionnel Développeur Web et Web Mobile niveau 5 (inscrit au RNCP n°37674)
+                                Préparation au Titre Professionnel de niveau 5 <em>Développeur Web</em> et Web Mobile (inscrit au RNCP n°37674)
                             </p>
+                            <ul class="content__item__sublist">
+                                <li>5 mois de formation théorique</li>
+                                <li>1 mois de projet de fin de formation en équipe</li>
+                                <li>2 à 6 mois de stage professionnalisant</li>
+                            </ul>
+                        </li>
+                        <li class="content__item">
+                            <div class="border-deco"></div>
+                            <h4 class="content__item__title content__item__infos">Découverte et apprentissage du développement web en autodidacte</h4>
+                            <div class="content__item__period">
+                                <time datetime="2023">2023 </time> - <time datetime="2024">2024</time>
+                            </div>
+                            <ul class="content__item__sublist">
+                                <li>HTML, CSS, JS front et back (Node.JS et Fastify), SQL (MySQL et SQlite)</li>
+                                <li>Ressources principales : Grafikart, OpenClassRooms</li>
+                            </ul>
                         </li>
                         <li class="content__item">
                             <div class="border-deco"></div>
                             <h4 class="content__item__title">Diplôme d’État Infirmier</h4>
-                            <div class="content__item__place">IFSI du CHU de Nice</div>
+                            <div class="content__item__infos">IFSI du CHU de Nice</div>
                             <div class="content__item__period">
                                 <time datetime="2013-09">septembre 2013 </time> - <time datetime="2016-07"> juillet 2016</time>
-                            </div>
-                        </li>
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <h4 class="content__item__title">Baccalauréat - Série Scientifique</h4>
-                            <div class="content__item__place">Lycée Honoré d'Estienne d'Orves, Nice</div>
-                            <div class="content__item__period">
-                                <time datetime="2023">2013</time>
                             </div>
                         </li>
                     </ul>
                 </section>
 
-                <button class="btn btn--mobile btn-upload">Télécharger en PDF</button>
-
+                <button class="btn btn-upload">
+                    <img class="btn__icon" src="./img/pdf-icon.svg" alt="pdf icon">
+                    <span>Télécharger</span>
+                </button>
             </section>
         </main>
-
     </div>
 </body>
 </html>
