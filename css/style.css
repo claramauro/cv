@@ -7,6 +7,7 @@
 
 body{
     font-family: "Public Sans", sans-serif;
+    font-size: 14px;
     line-height: 1.3rem;
     color: #221e1c;
     background-color: #FFF;
@@ -19,7 +20,7 @@ body{
     border : 1px solid var(--dark-theme-color)
 }
 
-h1, h3{
+h1, h3, h4{
     font-weight: 700;
 }
 
@@ -51,9 +52,9 @@ a:hover{
 /* Header*/
 .header{
     background-color: var(--light-theme-color);
-    padding: 35px 20px 35px 100px;
     width: 85%;
-    margin-top: 30px;
+    padding: 25px 25px 25px 100px;
+    margin-top: 35px;
     margin-left: auto;
     position: absolute;
     right: 0;
@@ -74,19 +75,20 @@ a:hover{
 
 .header__content__title{
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     letter-spacing: 0.03em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .header__content__subtitle{
     font-weight: 500;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
 }
 
 .header__content__text:nth-of-type(1){
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -98,7 +100,7 @@ a:hover{
     /* Sidebar */
 .sidebar{
     background-color: var(--medium-theme-color);
-    padding: 315px 30px 20px 30px; /* Padding-top doit ^etre > height du padding */
+    padding: 340px 20px 20px; /* Padding-top doit ^etre > height du padding */
     font-size: 14px;
     width: 35%;
 }
@@ -108,10 +110,11 @@ a:hover{
 }
 
 .sidebar__title{
-    font-size: 1.3rem;
+    font-size: 1.125rem;
     line-height: 1.2em;
     margin-bottom: 15px;
     color: #645141;
+    text-align: center;
 }
 
 .sidebar__list__item{
@@ -130,20 +133,27 @@ a:hover{
     width: 24px;
 }
 
-
-.sidebar__section--contact .sidebar-icon,
-.sidebar__section--diverse .sidebar-icon{
-width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plus grande que celle de la section sidebar__infos */
+.sidebar-icon--mail{
+    width: 22px;
 }
 
-.sidebar__list__item--age{
-    line-height: 1.2em; /*Aligne correctement le texte à son icone */
+.sidebar__section--techno h4{
+    font-size: 0.95rem;
+}
+
+.sidebar__section--techno .techno__item{
+    margin-bottom: 10px;
+}
+
+
+.sidebar__section--diverse .sidebar-icon{
+width: 21px; /*Réduit la taille de ces icones car paraissaient légèrement plus grande que celle de la section sidebar__infos */
 }
 
 
     /* Main-content */
 .main-content{
-    padding : 315px 0 20px 40px; /* Padding-top doit etre > height du padding */
+    padding : 340px 0 20px 40px; /* Padding-top doit etre > height du padding */
     width: 65%;
 }
 
