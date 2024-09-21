@@ -247,7 +247,7 @@ margin-bottom: 0;
     font-weight: 600;
 }
 
-.content__item__title.title--cleriam{
+.title--link{
     margin-bottom: 5px;
 }
 
@@ -479,7 +479,7 @@ margin-bottom: 0;
         flex-direction: column;
         row-gap: 1px;
         padding-left: 0;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .content__section__title{
