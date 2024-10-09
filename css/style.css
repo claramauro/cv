@@ -283,6 +283,10 @@ a:hover {
     column-gap: 10px;
 }
 
+.softskills--print {
+    display: none;
+}
+
 .softskills--main {
     width: calc(100% / 3 - 10px);
 }
@@ -425,19 +429,19 @@ a:hover {
 
     .sidebar,
     .main-content {
-        padding-top: 240px;
+        padding-top: 215px;
     }
 
     .sidebar {
-        width: 35%;
+        width: 30%;
     }
 
     .sidebar__section {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .sidebar__title {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .sidebar-icon {
@@ -454,6 +458,10 @@ a:hover {
         flex-wrap: wrap;
     }
 
+    .softskills__list--main {
+        display: none;
+    }
+
     .softskills {
         width: max-content;
         padding: 0;
@@ -461,12 +469,18 @@ a:hover {
         color: black;
     }
 
+    .softskills--print {
+        display: block;
+    }
+
     .main-content {
         padding-left: 5px;
+        padding-right: 20px;
+        width: 70%;
     }
 
     .content__section:not(.content__section:nth-last-child(1)) {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 
     .border-deco,
@@ -479,12 +493,16 @@ a:hover {
         flex-direction: column;
         row-gap: 1px;
         padding-left: 0;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+    }
+
+    .content__item:last-child {
+        margin-bottom: 0;
     }
 
     .content__section__title {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         padding: 0;
         color: #645141;
         font-weight: bold;
