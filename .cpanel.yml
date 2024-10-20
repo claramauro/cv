@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/cuxe8137/cv.claramauro.fr
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R img $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
+    - export DEPLOYPATH=$HOME/cv.claramauro.fr
+    - /bin/cp -R . $DEPLOYPATH
+    #- /bin/cp -R img $DEPLOYPATH
+    #- /bin/cp -R js $DEPLOYPATH
+    #- /bin/cp index.html $DEPLOYPATH
