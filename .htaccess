@@ -1,0 +1,2 @@
+# Définir index.html comme point d'entrée
+DirectoryIndex dist/index.html
