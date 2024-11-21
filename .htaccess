@@ -1,2 +1,24 @@
+# Activer le module de réécriture
+RewriteEngine On
+
+# Rediriger toutes les requêtes vers le dossier dist
+RewriteCond %{REQUEST_URI} !^/dist/
+RewriteRule ^(.*)$ /dist/$1 [L]
+
 # Définir index.html comme point d'entrée
 DirectoryIndex dist/index.html
+
+# Permettre le chargement des fichiers statiques
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|otf|eot)$">
+    Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+
+# Sécuriser l'accès au .htaccess
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# Activer la compression Gzip
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
