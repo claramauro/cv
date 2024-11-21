@@ -4,3 +4,9 @@ RewriteEngine On
 # Rediriger toutes les requêtes vers dist/index.html sans exposer /dist dans l'URL
 RewriteCond %{REQUEST_URI} !^/dist/
 RewriteRule ^(.*)$ /dist/index.html [L]
+
+# Empêcher l'accès direct au dossier /dist
+RewriteRule ^dist/ - [F,L]
+
+# Définir index.html comme point d'entrée
+DirectoryIndex dist/index.html
