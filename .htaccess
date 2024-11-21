@@ -5,8 +5,8 @@ RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/dist/
 RewriteRule ^(.*)$ /dist/index.html [L]
 
-# Empêcher l'accès direct au dossier /dist
-RewriteRule ^dist/ - [F,L]
+# Empêcher l'accès direct au dossier /dist, sauf pour index.html
+RewriteRule ^dist/(?!index.html).* - [F,L]
 
 # Définir index.html comme point d'entrée
 DirectoryIndex dist/index.html
