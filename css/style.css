@@ -281,6 +281,14 @@ a:hover {
   list-style: disc outside;
 }
 
+.content__item__sublist .li__sublist {
+  padding-left: 1rem;
+}
+
+.content__item__sublist .li__sublist li{
+  list-style-type: circle;
+}
+
 .sidebar__section--softskills .sidebar__title {
   margin-bottom: 20px;
 }
@@ -411,6 +419,13 @@ a:hover {
     display: initial;
   }
 
+  .print--flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: .5rem;
+  }
+
   html {
     font-size: 14px;
   }
@@ -431,7 +446,7 @@ a:hover {
 
   .header {
     margin-top: 0;
-    padding: 40px 20px 0;
+    padding: 30px 15px 0;
     width: 100%;
   }
 
