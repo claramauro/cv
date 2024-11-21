@@ -1,16 +1,19 @@
-# Activer le module de réécriture
+# Activer le moteur de réécriture
 RewriteEngine On
 
-# Rediriger toutes les requêtes vers le dossier dist
-RewriteCond %{REQUEST_URI} !^/dist/
-RewriteRule ^(.*)$ /dist/$1 [L]
+# Rediriger toutes les requêtes vers dist/index.html sans exposer /dist dans l'URL
+RewriteCond %{REQUEST_URI} !^/dist/  # Ne pas réécrire si déjà dans /dist
+RewriteRule ^(.*)$ /dist/index.html [L]
+
+# Empêcher l'accès direct au dossier /dist
+RewriteRule ^dist/ - [F,L]
 
 # Définir index.html comme point d'entrée
 DirectoryIndex dist/index.html
 
-# Permettre le chargement des fichiers statiques
-<FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|otf|eot)$">
-    Header set Cache-Control "max-age=2592000, public"
+# Permettre l'accès aux fichiers statiques dans dist (CSS, JS, images)
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|ico)$">
+    Require all granted
 </FilesMatch>
 
 # Sécuriser l'accès au .htaccess
@@ -18,7 +21,12 @@ DirectoryIndex dist/index.html
     Require all denied
 </Files>
 
-# Activer la compression Gzip
+# Activer la compression Gzip (optionnel)
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
 </IfModule>
+
+# Empêcher l'accès aux fichiers sensibles (optionnel)
+<FilesMatch "\.(env|json|log|md|sh|sql|sqlite|xml)$">
+    Require all denied
+</FilesMatch>
