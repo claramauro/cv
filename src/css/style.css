@@ -413,8 +413,12 @@ a:hover {
   }
 }
 
-/*Version imprimable/PDF*/
+/*Version imprimable*/
 @media print {
+  .print--hide{
+    display: none;
+  }
+
   .print-content {
     display: initial;
   }
@@ -513,8 +517,7 @@ a:hover {
   }
 
   .border-deco,
-  .btn,
-  .print--hide{
+  .btn{
     display: none;
   }
 
