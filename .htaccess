@@ -1,8 +1,14 @@
 # Activer les règles de réécriture
 RewriteEngine On
 
+# Ne pas réécrire les fichiers spécifiques (comme les PDFs et images)
+RewriteCond %{REQUEST_URI} \.(pdf|jpg|jpeg|png|gif|svg|ico|css|js|woff|woff2|ttf|eot)$ [NC]
+RewriteRule ^ - [L]
+
 # Si la requête est un fichier existant, ne pas réécrire
-RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
 # Si la requête est un dossier existant, ne pas réécrire
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
