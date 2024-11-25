@@ -1,17 +1,24 @@
 # Activer les règles de réécriture
 RewriteEngine On
 
-# Ne pas réécrire les fichiers spécifiques (comme les PDFs et images)
-RewriteCond %{REQUEST_URI} \.(pdf|jpg|jpeg|png|gif|svg|ico|css|js|woff|woff2|ttf|eot)$ [NC]
-RewriteRule ^ - [L]
+# Empêcher la mise en cache des fichiers HTML
+<FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</FilesMatch>
 
-# Si la requête est un fichier existant, ne pas réécrire
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule ^ - [L]
+# Autoriser l'accès direct aux fichiers statiques dans public
+RewriteCond %{REQUEST_URI} ^/(.+)\.(pdf|jpe?g|gif|png|svg|ico|js|css)$ [NC]
+RewriteCond %{DOCUMENT_ROOT}/public/%1.%2 -f
+RewriteRule ^(.+)\.(pdf|jpe?g|gif|png|svg|ico|js|css)$ /public/$1.$2 [L]
 
-# Si la requête est un dossier existant, ne pas réécrire
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+# Autoriser l'accès direct aux assets de Vite dans dist
+RewriteCond %{REQUEST_URI} ^/assets/
+RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -f
+RewriteRule ^assets/(.*)$ /dist/assets/$1 [L]
 
-# Rediriger toutes les autres requêtes vers index.html
-RewriteRule ^ /dist/index.html [L]
+# Pour toutes les autres requêtes, rediriger vers index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /dist/index.html [L]
