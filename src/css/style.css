@@ -513,7 +513,8 @@ a:hover {
   }
 
   .border-deco,
-  .btn {
+  .btn,
+  .print--hide{
     display: none;
   }
 

@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Clara Mauro-Gioan</title>
-    <link rel="icon" type="image/x-icon" href="/src/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="src/js/app.js" type="module"></script>
 </head>
 <body>
     <div class="container">
         <header class="header">
             <div class="header__photo">
-                <img src="/src/img/photo-cv.webp" alt="Photo CV Clara Mauro-Gioan">
+                <img src="/img/photo-cv.webp" alt="Photo CV Clara Mauro-Gioan">
             </div>
             <div class="header__content">
                 <h1 class="header__content__title">Clara Mauro-Gioan</h1>
@@ -39,23 +38,23 @@
                     <h3 class="sidebar__title">Informations</h3>
                     <ul>
                         <li class="infos__item">
-                            <img class="sidebar-icon" src="/src/img/map-pin-icon.svg" alt="icône point sur une carte">
+                            <img class="sidebar-icon" src="/img/map-pin-icon.svg" alt="icône point sur une carte">
                             <div>Nice, France</div>
                         </li>
                         <li class="infos__item">
-                            <img class="sidebar-icon  sidebar-icon--mail" src="/src/img/mail-icon.svg" alt="icône mail">
+                            <img class="sidebar-icon  sidebar-icon--mail" src="/img/mail-icon.svg" alt="icône mail">
                             <a class="mail-link" href="mailto:maurog.clara@gmail.com">maurog.clara@gmail.com</a>
                         </li>
                         <li class="infos__item">
-                            <img class="sidebar-icon" src="/src/img/phone-icon.svg" alt="icône téléphone">
+                            <img class="sidebar-icon" src="/img/phone-icon.svg" alt="icône téléphone">
                             <a href="tel:+33611659046">+33 6 11 65 90 46</a>
                         </li>
                         <li class="infos__item">
-                            <img class="sidebar-icon" src="/src/img/github-icon.svg" alt="icône GitHub">
+                            <img class="sidebar-icon" src="/img/github-icon.svg" alt="icône GitHub">
                             <a href="https://github.com/claramauro" target="_blank" title="Lien vers GitHub">claramauro</a>
                         </li>
                         <li class="infos__item">
-                            <img class="sidebar-icon" src="/src/img/linkedin-icon.svg" alt="icône Linkedin">
+                            <img class="sidebar-icon" src="/img/linkedin-icon.svg" alt="icône Linkedin">
                             <a href="https://www.linkedin.com/in/clara-mauro-gioan" target="_blank" title="Lien vers Linkedin">Clara Mauro-Gioan</a>
                         </li>
                     </ul>
@@ -95,11 +94,11 @@
                     <h3 class="sidebar__title">Divers</h3>
                     <ul>
                         <li class="divers__item">
-                            <img class="sidebar-icon sidebar-icon--languages" src="/src/img/languages-icon.svg" alt="icône langages">
+                            <img class="sidebar-icon sidebar-icon--languages" src="/img/languages-icon.svg" alt="icône langages">
                             <span>Français (langue maternelle), Anglais niveau CECRL B1</span>
                         </li>
                         <li class="divers__item">
-                            <img class="sidebar-icon" src="/src/img/heart-icon.svg" alt="icône représantant le thême des centres d'interêts">
+                            <img class="sidebar-icon" src="/img/heart-icon.svg" alt="icône représantant le thême des centres d'interêts">
                             <div>
                                 <h4>Centres d'intérêts :</h4>
                                 <p>Plongée sous marine (niveau PADI Advenced OW)</p>
@@ -122,7 +121,9 @@
                                 <span class="print-content"> - </span>
                                 <time class="content__item__period" datetime="2024-11">novembre 2024 </time>
                             </div>
-                            <p>PetFosterConnect : Application web de mise en relation d'associations de protection animal et de familles d'accueil temporaires.</p>
+                            <p>
+                                <a href="https://petfosterconnect.onrender.com" title="Lien vers PetFosterConnect" target="_blank">PetFosterConnect <span class="print-content">(petfosterconnect.onrender.com)</span></a>
+                                 : Application web de mise en relation d'associations de protection animal et de familles d'accueil temporaires.</p>
                             <ul class="content__item__sublist">
                                 <li>Réalisation en équipe, de la conception au déploiement du MVP (4 sprints d'une semaine).</li>
                                 <li>Élaboration cahier des charges, user stories, wireframes, maquettes, modélisation de la base de données</li>
@@ -202,7 +203,7 @@
                               Intégrer les règles et le vocabulaire assurance qualité web dans sa pratique professionnelle
                           </p>
                           <p>Note : 933/1000 points (expert)</p>
-                          <a href="https://www.opquast.com/" target="_blank">Opquast.com</a>
+                          <a href="https://www.opquast.com/" target="_blank" class="print--hide">Opquast.com</a>
                         </li>
                         <li class="content__item">
                             <div class="border-deco"></div>
@@ -249,10 +250,10 @@
                     </ul>
                 </section>
 
-                <button class="btn btn-upload">
-                    <img class="btn__icon" src="src/img/pdf-icon.svg" alt="pdf icon">
-                    <span>Télécharger</span>
-                </button>
+                <a class="btn" href="/CV_Clara_Mauro-Gioan.pdf" target="_blank" title="Télécharger le CV en PDF">
+                    <img class="btn__icon" src="/img/pdf-icon.svg" alt="Télécharger le CV en PDF">
+                    Télécharger
+                </a>
             </section>
         </main>
     </div>

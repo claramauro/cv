@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    base: '/dist/', // Ajuste les chemins pour le dossier dist
+    base: '/', // Ajuste les chemins pour le dossier dist
 });
