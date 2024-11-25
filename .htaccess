@@ -1,10 +1,11 @@
 # Activer les règles de réécriture
 RewriteEngine On
 
-# Si la requête n'est pas un fichier existant
-RewriteCond %{REQUEST_FILENAME} !-f
-# Et n'est pas un dossier existant
-RewriteCond %{REQUEST_FILENAME} !-d
+# Si la requête est un fichier existant, ne pas réécrire
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+# Si la requête est un dossier existant, ne pas réécrire
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-# Rediriger toutes les requêtes vers index.html dans le dossier dist
-RewriteRule ^(.*)$ /dist/index.html [L]
+# Rediriger toutes les autres requêtes vers index.html
+RewriteRule ^ /dist/index.html [L]
