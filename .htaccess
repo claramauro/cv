@@ -8,6 +8,13 @@ RewriteEngine On
     Header set Expires 0
 </FilesMatch>
 
+# Empêcher la mise en cache des fichiers PDF
+<FilesMatch "\.(pdf)$">
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</FilesMatch>
+
 # Autoriser l'accès direct aux fichiers statiques dans public
 RewriteCond %{REQUEST_URI} ^/(.+)\.(pdf|jpe?g|gif|png|svg|ico|js|css)$ [NC]
 RewriteCond %{DOCUMENT_ROOT}/public/%1.%2 -f
