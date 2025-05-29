@@ -129,7 +129,7 @@ a:hover {
 /* Sidebar */
 .sidebar {
     background-color: var(--medium-theme-color);
-    padding: 340px 20px 20px;
+    padding: 360px 20px 20px;
     /* Padding-top doit être > height du padding */
     font-size: 14px;
     width: 35%;
@@ -194,7 +194,7 @@ a:hover {
 
 /* Main-content */
 .main-content {
-    padding: 340px 0 20px 40px;
+    padding: 360px 0 20px 40px;
     /* Padding-top doit être > height du padding */
     width: 65%;
 }
@@ -469,7 +469,7 @@ a:hover {
 
     .sidebar,
     .main-content {
-        padding-top: 220px;
+        padding-top: 240px;
         background-color: initial;
     }
 
@@ -523,7 +523,7 @@ a:hover {
     }
 
     .content__section:not(.content__section:nth-last-of-type(1)) {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .border-deco,
@@ -536,7 +536,7 @@ a:hover {
         flex-direction: column;
         row-gap: 1px;
         padding-left: 0;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .content__item:last-child {
