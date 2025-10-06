@@ -1,269 +1,409 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV | Clara Mauro-Gioan</title>
-    <link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="header__photo">
-                <img src="src/img/photo-cv.webp" alt="Photo CV Clara Mauro-Gioan">
-            </div>
-            <div class="header__content">
-                <h1 class="header__content__title">Clara Mauro-Gioan</h1>
-                <h2 class="header__content__subtitle">
-                    <div>Développeuse web fullstack</div>
-                    <div>JavaScript | TypeScript | React.js | Node.js</div>
-                </h2>
-                <p class="header__content__text">
-                    Après 6 ans en tant qu’infirmière, ma curiosité et mon souhait de reconversion m’ont conduite à découvrir le <em>développement web</em>.
-                    Ayant débuté en autodidacte et pris goût à la création d’<em>applications web</em>, j’ai poursuivi mon apprentissage en intégrant une formation chez O’clock pour me professionnaliser.
-                </p>
-                <p class="header__content__text">
-                    Après un stage de 3 mois, au cours duquel j'ai mis en pratique mes acquis sur un projet concret, je
-                    recherche à présent un poste de <em>développeuse</em> web. En parallèle, je continue à me
-                    former activement pour élargir mes compétences, notamment en <em>Next.js</em> et en <em>PHP</em>.
-                </p>
-            </div>
-        </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CV | Clara Mauro-Gioan</title>
+        <link rel="icon" type="image/x-icon" href="src/img/favicon.ico" />
+        <link rel="stylesheet" href="src/css/reset.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="src/css/print.css" media="print" />
+    </head>
 
-        <main class="main">
-            <aside class="sidebar">
-                <section class="sidebar__section sidebar__section--infos">
-                    <h3 class="sidebar__title">Informations</h3>
-                    <ul>
-                        <li class="infos__item">
-                            <img class="sidebar-icon" src="src/img/map-pin-icon.svg" alt="icône point sur une carte">
-                            <div>Nice, France</div>
-                        </li>
-                        <li class="infos__item">
-                            <img class="sidebar-icon  sidebar-icon--mail" src="src/img/mail-icon.svg" alt="icône mail">
-                            <a class="mail-link" href="mailto:maurog.clara@gmail.com">maurog.clara@gmail.com</a>
-                        </li>
-                        <li class="infos__item">
-                            <img class="sidebar-icon" src="src/img/phone-icon.svg" alt="icône téléphone">
-                            <a href="tel:+33611659046">+33 6 11 65 90 46</a>
-                        </li>
-                        <li class="infos__item">
-                            <img class="sidebar-icon" src="src/img/github-icon.svg" alt="icône GitHub">
-                            <a href="https://github.com/claramauro" target="_blank" title="Lien vers GitHub">claramauro</a>
-                        </li>
-                        <li class="infos__item">
-                            <img class="sidebar-icon" src="src/img/linkedin-icon.svg" alt="icône Linkedin">
-                            <a href="https://www.linkedin.com/in/clara-mauro-gioan" target="_blank" title="Lien vers Linkedin">Clara Mauro-Gioan</a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="sidebar__section sidebar__section--techno">
-                    <h3 class="sidebar__title">Technologies</h3>
-                    <ul>
-                        <li class="techno__item">
-                            <h4>Langages de programmation :</h4>
-                            <p>HTML, CSS, <em>JavaScript</em>, TypeScript, <em>Node.JS</em>, <em>PHP</em></p>
-                        </li>
-                        <li class="techno__item">
-                            <h4>Frameworks et bibliothèques :</h4>
-                            <p><em>React</em>, <em>Next.js</em>, Express, Fastify, EJS, Bootstrap, Tailwind</p>
-                        </li>
-                        <li class="techno__item">
-                            <h4>Base de données :</h4>
-                            <p>SQL (PostgreSQL, MySQL), ORM (Sequelize), NoSQL</p>
-                        </li>
-                        <li class="techno__item">
-                            <h4>Autres :</h4>
-                            <p><em>Git</em>, <em>Docker</em>, API, <em>Tests unitaires</em>, <em>Responsive design</em>, SASS, <em>accessibilité</em>, Figma</p>
-                        </li>
-                    </ul>
-                </section>
-                <section class="sidebar__section sidebar__section--softskills">
-                    <h3 class="sidebar__title">Qualités personnelles</h3>
-                    <ul class="softskills__list">
-                        <li class="softskills softskills--sidebar">Organisée</li>
-                        <li class="softskills softskills--sidebar">Réfléchie</li>
-                        <li class="softskills softskills--sidebar">Rigoureuse</li>
-                        <li class="softskills softskills--sidebar">Curieuse</li>
-                        <li class="softskills softskills--sidebar">Loyale</li>
-                    </ul>
-                </section>
-                <section class="sidebar__section sidebar__section--diverse">
-                    <h3 class="sidebar__title">Divers</h3>
-                    <ul>
-                        <li class="divers__item">
-                            <img class="sidebar-icon sidebar-icon--languages" src="src/img/languages-icon.svg" alt="icône langages">
-                            <span>Français (langue maternelle), Anglais niveau CECRL B1</span>
-                        </li>
-                        <li class="divers__item">
-                            <img class="sidebar-icon" src="src/img/heart-icon.svg" alt="icône représantant le thême des centres d'interêts">
-                            <div>
-                                <h4>Centres d'intérêts :</h4>
-                                <p>Plongée sous marine (niveau PADI Advanced OW)</p>
-                                <p>Voyages : découvrir de nouveaux paysages, des cultures et des gastronomies différentes.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </aside>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header__photo">
+                    <img src="src/img/photo-cv.webp" alt="Photo CV Clara Mauro-Gioan" />
+                </div>
+                <div class="header__content">
+                    <h1 class="header__content__title">Clara Mauro-Gioan</h1>
+                    <h2 class="header__content__subtitle">
+                        <div>Développeuse web fullstack</div>
+                        <div>JavaScript | TypeScript | React.js | Node.js</div>
+                    </h2>
+                    <p class="header__content__text">
+                        Après 6 ans en tant qu’infirmière, ma curiosité et mon souhait de reconversion m’ont conduite à
+                        découvrir le
+                        <em>développement web</em>
+                        . Ayant débuté en autodidacte et pris goût à la création d’
+                        <em>applications web</em>
+                        , j’ai poursuivi mon apprentissage en intégrant une formation chez O’clock pour me
+                        professionnaliser.
+                    </p>
+                    <p class="header__content__text">
+                        Je recherche un poste de
+                        <strong>développeuse</strong>
+                        web
+                        <em>Javascript</em>
+                        ,
+                        <em>TypeScript</em>
+                        , et/ou
+                        <em>PHP</em>
+                        .
+                        <br />
+                        En parallèle, je collabore sur des projets clients tout en continuant à me former pour élargir
+                        mes compétences, notamment en Next.JS et en PHP.
+                    </p>
+                </div>
+            </header>
 
-            <section class="main-content">
-                <section class="content__section">
-                    <h3 class="content__section__title">Expériences</h3>
-                    <ul class="content__section__list">
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <h4 class="content__item__title">Développeuse web fullstack</h4>
-                            <div class="print--flex">
-                                <p class="content__item__infos">Stage - Informatics for Bio-Companies (IBC)</p>
-                                <span class="print-content"> - </span>
-                                <div class="content__item__period">
-                                    <time datetime="2025-02">02/2025 </time> - <time datetime="2025-04"> 04/2025</time>
+            <main class="main">
+                <aside class="sidebar">
+                    <section class="sidebar__section sidebar__section--infos">
+                        <h3 class="sidebar__title">Informations</h3>
+                        <ul>
+                            <li class="infos__item">
+                                <img
+                                    class="sidebar-icon"
+                                    src="src/img/map-pin-icon.svg"
+                                    alt="icône point sur une carte" />
+                                <div>Nice, France</div>
+                            </li>
+                            <li class="infos__item">
+                                <img
+                                    class="sidebar-icon sidebar-icon--mail"
+                                    src="src/img/mail-icon.svg"
+                                    alt="icône mail" />
+                                <a class="mail-link" href="mailto:maurog.clara@gmail.com">maurog.clara@gmail.com</a>
+                            </li>
+                            <li class="infos__item">
+                                <img class="sidebar-icon" src="src/img/phone-icon.svg" alt="icône téléphone" />
+                                <a href="tel:+33611659046">+33 6 11 65 90 46</a>
+                            </li>
+                            <li class="infos__item">
+                                <img class="sidebar-icon" src="src/img/github-icon.svg" alt="icône GitHub" />
+                                <a href="https://github.com/claramauro" target="_blank" title="Lien vers GitHub">
+                                    claramauro
+                                </a>
+                            </li>
+                            <li class="infos__item">
+                                <img class="sidebar-icon" src="src/img/linkedin-icon.svg" alt="icône Linkedin" />
+                                <a
+                                    href="https://www.linkedin.com/in/clara-mauro-gioan"
+                                    target="_blank"
+                                    title="Lien vers Linkedin">
+                                    Clara Mauro-Gioan
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="sidebar__section sidebar__section--techno">
+                        <h3 class="sidebar__title">Technologies</h3>
+                        <ul>
+                            <li class="techno__item">
+                                <h4>Langages de programmation :</h4>
+                                <p>
+                                    <em>JavaScript</em>
+                                    , TypeScript,
+                                    <em>Node.JS</em>
+                                    ,
+                                    <em>PHP</em>
+                                    , HTML, CSS
+                                </p>
+                            </li>
+                            <li class="techno__item">
+                                <h4>Frameworks et bibliothèques :</h4>
+                                <p>
+                                    <em>React</em>
+                                    ,
+                                    <em>Next.js</em>
+                                    , Express, Fastify, EJS, Bootstrap, Tailwind
+                                </p>
+                            </li>
+                            <li class="techno__item">
+                                <h4>Base de données :</h4>
+                                <p>SQL (PostgreSQL, MySQL), ORM (Sequelize), NoSQL</p>
+                            </li>
+                            <li class="techno__item">
+                                <h4>Autres :</h4>
+                                <p>
+                                    <em>Git</em>
+                                    ,
+                                    <em>Docker</em>
+                                    , API,
+                                    <em>Tests unitaires</em>
+                                    ,
+                                    <em>Responsive design</em>
+                                    , SASS,
+                                    <em>Accessibilité</em>
+                                    , Figma
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="sidebar__section sidebar__section--softskills">
+                        <h3 class="sidebar__title">Qualités personnelles</h3>
+                        <ul class="softskills__list">
+                            <li class="softskills softskills--sidebar">Organisée</li>
+                            <li class="softskills softskills--sidebar">Réfléchie</li>
+                            <li class="softskills softskills--sidebar">Rigoureuse</li>
+                            <li class="softskills softskills--sidebar">Curieuse</li>
+                            <li class="softskills softskills--sidebar">Loyale</li>
+                        </ul>
+                    </section>
+                    <section class="sidebar__section sidebar__section--diverse">
+                        <h3 class="sidebar__title">Divers</h3>
+                        <ul>
+                            <li class="divers__item">
+                                <img
+                                    class="sidebar-icon sidebar-icon--languages"
+                                    src="src/img/languages-icon.svg"
+                                    alt="icône langages" />
+                                <span>Français (langue maternelle), Anglais niveau CECRL B1</span>
+                            </li>
+                            <li class="divers__item">
+                                <img
+                                    class="sidebar-icon"
+                                    src="src/img/heart-icon.svg"
+                                    alt="icône représantant le thême des centres d'interêts" />
+                                <div>
+                                    <h4>Centres d'intérêts :</h4>
+                                    <p>Plongée sous marine (niveau PADI Advanced OW)</p>
+                                    <p>
+                                        Voyages : découvrir de nouveaux paysages, des cultures et des gastronomies
+                                        différentes.
+                                    </p>
                                 </div>
-                            </div>
-                            <p>
-                                Projet Olympeis : Cahier de laboratoire électronique (ELN)
-                            <ul class="content__item__sublist">
-                                <li>Participation au développement fullstack de l'application web</li>
-                                <li> Technologies :
-                                    <ul class="li__sublist">
-                                        <li>Front : React + Typescript, SASS, Axios</li>
-                                        <li>Back : Typescript, Node.js, Express.js, API, MySQL</li>
-                                        <li>Autres : Tests unitaires (Mocha, Chai, Sinon), Architecture hexagonale, Git</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
 
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <h4 class="content__item__title">Développeuse web fullstack</h4>
-                            <div class="print--flex">
-                                <p class="content__item__infos">Projet de fin de formation - École O'clock</p>
-                                <span class="print-content"> - </span>
-                                <time class="content__item__period" datetime="2024-11">novembre 2024 </time>
-                            </div>
-                            <p>
-                                <a href="https://petfoster.claramauro.fr" title="Lien vers PetFosterConnect" target="_blank">PetFosterConnect <span class="print-content">(petfoster.claramauro.fr)</span></a>
-                                 : Application web connectant associations de protection animale et familles d'accueil temporaires.</p>
-                            <ul class="content__item__sublist">
-                                <li>Réalisation en équipe, de la conception au déploiement du MVP (4 sprints d'une semaine).</li>
-                                <li>Élaboration cahier des charges, user stories, wireframes, maquettes, modélisation de la base de données</li>
-                                <li>Développement fullstack :
-                                    <ul class="li__sublist">
-                                        <li>Front : Single Page App React + Typescript, SASS, Bootstrap-React, Vite</li>
-                                        <li>Back : API Rest, Node.js, Express.js, PostgreSQL, Sequelize</li>
-                                        <li>Autres : Docker, Git, accessibilité</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                <section class="main-content">
+                    <section class="content__section">
+                        <h3 class="content__section__title">Expériences</h3>
+                        <ul class="content__section__list">
+                            <li class="content__item">
+                                <div class="border-deco"></div>
+                                <h4 class="content__item__title">Développeuse web fullstack</h4>
+                                <div class="print--flex">
+                                    <p class="content__item__infos">QDEQUIPPE</p>
+                                    <span class="print-content">-</span>
+                                    <div class="content__item__period">
+                                        <time datetime="2025-05">Depuis 05/2025</time>
+                                    </div>
+                                </div>
+                                <p>
+                                    Collaboration sur divers projets clients tels que des sites marketing et
+                                    applications en ligne type Saas
+                                </p>
+                                <p>Technologies : JavaScript et PHP</p>
+                            </li>
+                            <li class="content__item">
+                                <div class="border-deco"></div>
+                                <h4 class="content__item__title">Développeuse web fullstack</h4>
+                                <div class="print--flex">
+                                    <p class="content__item__infos">Stage - Informatics for Bio-Companies (IBC)</p>
+                                    <span class="print-content">-</span>
+                                    <div class="content__item__period">
+                                        <time datetime="2025-02">02/2025</time>
+                                        -
+                                        <time datetime="2025-04">04/2025</time>
+                                    </div>
+                                </div>
+                                <p>Projet Olympeis : Cahier de laboratoire électronique (ELN)</p>
+                                <ul class="content__item__sublist">
+                                    <li>Participation au développement fullstack de l'application web</li>
+                                    <li>
+                                        Technologies :
+                                        <ul class="li__sublist">
+                                            <li>Front : React + Typescript, SASS, Axios</li>
+                                            <li>Back : Typescript, Node.js, Express.js, API, MySQL</li>
+                                            <li>
+                                                Autres : Tests unitaires (Mocha, Chai, Sinon), Architecture hexagonale,
+                                                Git
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
 
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <h4 class="content__item__title">Infirmière Diplomée d'État</h4>
-                            <div class="print--flex">
-                                <p class="content__item__infos">Laboratoire d'Analyses Médicales Cerballiance - Nice</p>
-                                <span class="print-content"> - </span>
-                                <div class="content__item__period">
-                                    <time datetime="2022-10">10/2022 </time> - <time datetime="2023-12"> 12/2022</time>
+                            <li class="content__item">
+                                <div class="border-deco"></div>
+                                <h4 class="content__item__title">Développeuse web fullstack</h4>
+                                <div class="print--flex">
+                                    <p class="content__item__infos">Projet de fin de formation - École O'clock</p>
+                                    <span class="print-content">-</span>
+                                    <time class="content__item__period" datetime="2024-11">novembre 2024</time>
                                 </div>
-                            </div>
-                            <div class="print--flex">
-                                <p class="content__item__infos">Chirurgie réparatrice, esthétique et de la main - CHU de Nice</p>
-                                <span class="print-content"> - </span>
-                                <div class="content__item__period">
-                                    <time datetime="2016-07">2016 </time> - <time datetime="2022-08">2022</time>
+                                <p>
+                                    <a
+                                        href="https://petfoster.claramauro.fr"
+                                        title="Lien vers PetFosterConnect"
+                                        target="_blank">
+                                        PetFosterConnect
+                                        <span class="print-content">(petfoster.claramauro.fr)</span>
+                                    </a>
+                                    : Application web connectant associations de protection animale et familles
+                                    d'accueil temporaires.
+                                </p>
+                                <ul class="content__item__sublist">
+                                    <li>
+                                        Réalisation en équipe, de la conception au déploiement du MVP (4 sprints d'une
+                                        semaine).
+                                    </li>
+                                    <li>
+                                        Élaboration cahier des charges, user stories, wireframes, maquettes,
+                                        modélisation de la base de données
+                                    </li>
+                                    <li>
+                                        Développement fullstack :
+                                        <ul class="li__sublist">
+                                            <li>
+                                                Front : Single Page App React + Typescript, SASS, Bootstrap-React, Vite
+                                            </li>
+                                            <li>Back : API Rest, Node.js, Express.js, PostgreSQL, Sequelize</li>
+                                            <li>Autres : Docker, Git, accessibilité</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="content__item">
+                                <div class="border-deco"></div>
+                                <h4 class="content__item__title">Infirmière Diplomée d'État</h4>
+                                <div class="print--flex">
+                                    <p class="content__item__infos">
+                                        Laboratoire d'Analyses Médicales Cerballiance - Nice
+                                    </p>
+                                    <span class="print-content">-</span>
+                                    <div class="content__item__period">
+                                        <time datetime="2022-10">10/2022</time>
+                                        -
+                                        <time datetime="2023-12">12/2022</time>
+                                    </div>
                                 </div>
-                            </div>
-                            <h5>Compétences transversales :</h5>
-                            <ul class="softskills__list softskills__list--main">
-                                <li class="softskills softskills--main">Organisation</li>
-                                <li class="softskills softskills--main">Planification</li>
-                                <li class="softskills softskills--main">Travail en équipe</li>
-                                <li class="softskills softskills--main">Communication</li>
-                                <li class="softskills softskills--main">Gestion du stress</li>
-                                <li class="softskills softskills--main">Encadrement</li>
-                            </ul>
-                            <p class="softskills--print">Organisation, planification, travail en équipe, communication, gestion du stress, encadrement </p>
-                        </li>
-                    </ul>
-                    <p class="ref">Références et recommandations disponibles sur demande</p>
+                                <div class="print--flex">
+                                    <p class="content__item__infos">
+                                        Chirurgie réparatrice, esthétique et de la main - CHU de Nice
+                                    </p>
+                                    <span class="print-content">-</span>
+                                    <div class="content__item__period">
+                                        <time datetime="2016-07">2016</time>
+                                        -
+                                        <time datetime="2022-08">2022</time>
+                                    </div>
+                                </div>
+                                <h5 class="softskills__list--main">Compétences transversales :</h5>
+                                <ul class="softskills__list softskills__list--main">
+                                    <li class="softskills softskills--main">Organisation</li>
+                                    <li class="softskills softskills--main">Planification</li>
+                                    <li class="softskills softskills--main">Travail en équipe</li>
+                                    <li class="softskills softskills--main">Communication</li>
+                                    <li class="softskills softskills--main">Gestion du stress</li>
+                                    <li class="softskills softskills--main">Encadrement</li>
+                                </ul>
+                                <div class="softskills--print">
+                                    <h5>Compétences transversales :</h5>
+                                    <p>
+                                        organisation, planification, travail en équipe, communication, gestion du
+                                        stress, encadrement
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="ref">Références et recommandations disponibles sur demande</p>
+                    </section>
+
+                    <section class="content__section">
+                        <h3 class="content__section__title">Formations</h3>
+                        <ul class="content__section__list">
+                            <li class="content__item">
+                                <div class="border-deco"></div>
+                                <div class="print--flex">
+                                    <h4 class="content__item__title">
+                                        Certification
+                                        <em>Opquast</em>
+                                        - Assurance qualité web
+                                    </h4>
+                                    <span class="print-content">-</span>
+                                    <div class="content__item__period">
+                                        <time datetime="2024-10">octobre 2024</time>
+                                    </div>
+                                </div>
+                                <p>
+                                    Intégrer les règles et le vocabulaire assurance qualité web dans sa pratique
+                                    professionnelle (niveau Expert : 933/1000 points).
+                                </p>
+                                <a href="https://www.opquast.com/" target="_blank" class="print--hide">Opquast.com</a>
+                            </li>
+                            <li class="content__item">
+                                <div class="border-deco"></div>
+                                <h4 class="content__item__title">
+                                    Formation développement web
+                                    <em>Fullstack</em>
+                                    <em>Javascript</em>
+                                </h4>
+                                <div class="print--flex">
+                                    <div class="content__item__infos">École O'clock - Formation en téléprésentiel</div>
+                                    <span class="print-content">-</span>
+                                    <div class="content__item__period">
+                                        <time datetime="2024-05">mai 2024</time>
+                                        -
+                                        <time datetime="2025-01">janvier 2025</time>
+                                    </div>
+                                </div>
+                                <p>
+                                    Obtention du Titre Professionnel de niveau 5
+                                    <em>Développeur Web</em>
+                                    et Web Mobile (inscrit au RNCP n°37674)
+                                </p>
+                                <ul class="content__item__sublist">
+                                    <li>
+                                        5 mois de formation théorique, 1 mois de projet de fin de formation en équipe
+                                    </li>
+                                    <li>3 mois de stage professionnalisant</li>
+                                </ul>
+                            </li>
+                            <li class="content__item">
+                                <div class="border-deco"></div>
+                                <div class="print--flex">
+                                    <h4 class="content__item__title content__item__infos">
+                                        Apprentissage du développement web en autodidacte
+                                    </h4>
+                                    <span class="print-content">-</span>
+                                    <div class="content__item__period">
+                                        <time datetime="2023">2023</time>
+                                        -
+                                        <time datetime="2024">2024</time>
+                                    </div>
+                                </div>
+                                <ul class="content__item__sublist">
+                                    <li>
+                                        HTML, CSS,
+                                        <em>JS</em>
+                                        front et back (Node.JS et Fastify), SQL (MySQL et SQlite)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="content__item">
+                                <div class="border-deco"></div>
+                                <h4 class="content__item__title">Diplôme d’État Infirmier</h4>
+                                <div class="print--flex">
+                                    <div class="content__item__infos">IFSI du CHU de Nice</div>
+                                    <span class="print-content">-</span>
+                                    <div class="content__item__period">
+                                        <time datetime="2013-09">septembre 2013</time>
+                                        -
+                                        <time datetime="2016-07">juillet 2016</time>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <a class="btn" href="/CV_Clara_Mauro-Gioan.pdf" target="_blank" title="Télécharger le CV en PDF">
+                        <img class="btn__icon" src="src/img/pdf-icon.svg" alt="Télécharger le CV en PDF" />
+                        Télécharger
+                    </a>
                 </section>
-
-                <section class="content__section">
-                    <h3 class="content__section__title">Formations</h3>
-                    <ul class="content__section__list">
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <div class="print--flex">
-                                <h4 class="content__item__title">Certification <em>Opquast</em> - Assurance qualité web</h4>
-                                <span class="print-content"> - </span>
-                                <div class="content__item__period">
-                                    <time datetime="2024-10">octobre 2024 </time>
-                                </div>
-                            </div>
-                          <p>
-                              Intégrer les règles et le vocabulaire assurance qualité web dans sa pratique professionnelle (niveau Expert : 933/1000 points).
-                          </p>
-                          <a href="https://www.opquast.com/" target="_blank" class="print--hide">Opquast.com</a>
-                        </li>
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <h4 class="content__item__title">Formation développement web <em>Fullstack</em> <em>Javascript</em></h4>
-                            <div class="print--flex">
-                                <div class="content__item__infos">École O'clock - Formation en téléprésentiel</div>
-                                <span class="print-content"> - </span>
-                                <div class="content__item__period">
-                                    <time datetime="2024-05">mai 2024 </time> - <time datetime="2025-01"> janvier 2025</time>
-                                </div>
-                            </div>
-                            <p>
-                                Obtention du Titre Professionnel de niveau 5 <em>Développeur Web</em> et Web Mobile (inscrit au RNCP n°37674)
-                            </p>
-                            <ul class="content__item__sublist">
-                                <li>5 mois de formation théorique, 1 mois de projet de fin de formation en équipe</li>
-                                <li>3 mois de stage professionnalisant</li>
-                            </ul>
-                        </li>
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <div class="print--flex">
-                                <h4 class="content__item__title content__item__infos">Apprentissage du développement web en autodidacte</h4>
-                                <span class="print-content"> - </span>
-                                <div class="content__item__period">
-                                    <time datetime="2023">2023 </time> - <time datetime="2024">2024</time>
-                                </div>
-                            </div>
-                            <ul class="content__item__sublist">
-                                <li>HTML, CSS, <em>JS</em> front et back (Node.JS et Fastify), SQL (MySQL et SQlite)</li>
-                            </ul>
-                        </li>
-                        <li class="content__item">
-                            <div class="border-deco"></div>
-                            <h4 class="content__item__title">Diplôme d’État Infirmier</h4>
-                            <div class="print--flex">
-                                <div class="content__item__infos">IFSI du CHU de Nice</div>
-                                <span class="print-content"> - </span>
-                                <div class="content__item__period">
-                                    <time datetime="2013-09">septembre 2013 </time> - <time datetime="2016-07"> juillet 2016</time>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <a class="btn" href="/CV_Clara_Mauro-Gioan.pdf" target="_blank" title="Télécharger le CV en PDF">
-                    <img class="btn__icon" src="src/img/pdf-icon.svg" alt="Télécharger le CV en PDF">
-                    Télécharger
-                </a>
-            </section>
-        </main>
-    </div>
-</body>
+            </main>
+        </div>
+    </body>
 </html>
